@@ -3,6 +3,7 @@ import './App.css';
 
 // own components
 import Form from "./components/Form";
+import Recipes from './components/Recipes';
 
 
 
@@ -33,14 +34,7 @@ class App extends Component {
     return (
       <div className="app">
         <Form getRecipe={this.getRecipe}/>
-        
-        {
-          this.state.recipes.map((recipe) => {
-            return <p key={recipe.recipe_id}> {recipe.title} </p>
-
-        }) 
-        }
-       
+        <Recipes recipes = {this.state.recipes}/>
       </div>
     );
   }
