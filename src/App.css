@@ -1,8 +1,64 @@
 .app{
-    height: 100vh;
+    height: 100%;
     display:flex;
     align-items: center;
-   
+    background-image: linear-gradient(to right bottom, #ffffff, #fcfcfc, #f8f8f8, #f5f5f5, #f2f2f2);
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     flex-direction: column;
+}
+
+.grid{
+    padding-top: 50px;
+    display:grid;
+    grid-gap:30px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 450px 450px 450px 450px;
+    justify-content: center;
+  
+}
+.grid-item{
+   
+    position: relative;
+    height: 450px;
+ 
+}
+.grid img{
+    height: 250px;
+    width: 300px;
+    border-radius: 2px;
+    -webkit-box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.79);
+-moz-box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.79);
+box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.79);
+}
+.btn{
+    width: 90px;
+    height: 40px;
+    color:rgb(255, 255, 255);
+    background: rgb(12, 177, 141);
+    border-radius: 20px;
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+    border:1px solid rgb(255, 255, 255);   
+    cursor: pointer; 
+    
+
+}
+.btn2{
+    width: 80px;
+    height: 30px;
+    color:rgb(255, 255, 255);
+    background: rgb(12, 177, 141);
+    border:none;
+    border-radius: 0 20px 20px 0;
+   
+    border:1px solid rgb(207, 207, 207);   
+    cursor: pointer; 
+    
+
+}
+input{
+    height: 24px;
 }

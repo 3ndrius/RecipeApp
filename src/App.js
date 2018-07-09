@@ -34,7 +34,9 @@ class App extends Component {
     return (
       <div className="app">
         <Form getRecipe={this.getRecipe}/>
+        <div className="grid">
         <Recipes recipes = {this.state.recipes}/>
+        </div>
       </div>
     );
   }

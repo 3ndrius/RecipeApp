@@ -5,7 +5,7 @@ const Form = props => (
     <form onSubmit={props.getRecipe}>
 
         <input type="text" name="recipeName" />
-        <button> Search </button>
+        <button className="btn2"> Search </button>
 
     </form>
 );
