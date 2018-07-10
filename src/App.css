@@ -106,3 +106,35 @@ input{
     border-left:0px;
     padding-left:15px;
 }
+
+.container-grid{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px  4fr 1fr 50px 50px 50px;
+    justify-items: center;
+
+}
+.figure img{
+   max-height: 800px;
+   max-width: auto;
+}
+.btn3{
+    width: 110px;
+    height: 40px;
+    
+    background: white;
+    border-radius: 20px;
+    
+    border:1px solid rgb(184, 60, 60);
+    cursor: pointer; 
+    
+
+}
+.btn3 a{
+    color:rgb(5, 74, 102);
+    text-decoration: none;
+}
+.link{
+    font-size: 12px;
+}

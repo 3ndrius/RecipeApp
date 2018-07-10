@@ -10,7 +10,10 @@ const Recipes = (props) => (
                 <h4 className="title"> {recipe.title} </h4>
                 <p className="author">Publisher: <span>{recipe.publisher}</span> </p>
                 <button className="btn">
-                  <Link to={{pathname: `/recipe/${recipe.recipe_id}`}}> View Recipe </Link>
+                  <Link to={{
+                    pathname: `/recipe/${recipe.recipe_id}`,
+                    state: {recipe: recipe.title}
+                    }}> View Recipe </Link>
                 </button>
               </div>
             );
