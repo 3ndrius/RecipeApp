@@ -33,6 +33,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+      <div className="header"> RecipeBook </div>
         <Form getRecipe={this.getRecipe}/>
         <div className="grid">
         <Recipes recipes = {this.state.recipes}/>
