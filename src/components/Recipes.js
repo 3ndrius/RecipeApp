@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 const Recipes = (props) => (
         
           props.recipes.map((recipe) => {
+           
             return(
               <div key={recipe.recipe_id} className="grid-item"> 
                 <img src={recipe.image_url} alt={recipe.title} />

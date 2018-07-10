@@ -7,6 +7,8 @@ import Recipes from './components/Recipes';
 
 
 
+
+
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
 
 
@@ -43,12 +45,14 @@ class App extends Component {
    
 }
   render() {
+    
     return (
       <div className="app">
-      <div className="header"> RecipeBook </div>
+      <div className="header"> RecipesBook </div>
         <Form getRecipe={this.getRecipe}/>
         <div className="grid">
         <Recipes recipes = {this.state.recipes}/>
+        
         </div>
       </div>
     );
