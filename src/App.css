@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
 .app{
     height: 100%;
     display:flex;
@@ -7,6 +9,8 @@
     background-position: center;
     padding: 20px;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .grid{
@@ -35,13 +39,13 @@ box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.79);
 .btn{
     width: 90px;
     height: 40px;
-    color:rgb(255, 255, 255);
-    background: rgb(12, 177, 141);
+    color:rgb(184, 60, 60);;
+    background: white;
     border-radius: 20px;
     position: absolute;
     bottom:10px;
     right: 10px;
-    border:1px solid rgb(255, 255, 255);   
+    border:2px solid rgb(184, 60, 60);
     cursor: pointer; 
     
 
@@ -49,16 +53,19 @@ box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.79);
 .btn2{
     width: 80px;
     height: 30px;
-    color:rgb(255, 255, 255);
-    background: rgb(12, 177, 141);
+    color:rgb(184, 60, 60);;
+    background: white;
     border:none;
     border-radius: 0 20px 20px 0;
    
-    border:1px solid rgb(207, 207, 207);   
+    border:2px solid rgb(184, 60, 60);
     cursor: pointer; 
     
 
 }
 input{
     height: 24px;
+    border:2px solid rgb(184, 60, 60);
+    border-right: 0px;
+    padding-left:15px;
 }
