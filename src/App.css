@@ -18,15 +18,24 @@
     display:grid;
     grid-gap:30px;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 450px 450px 450px 450px;
+    grid-template-rows: 430px 430px 430px 430px;
     justify-content: center;
   
 }
 .grid-item{
    
     position: relative;
-    height: 450px;
+    height: 430px;
  
+}
+.title{
+    color:rgb(184, 60, 60);
+    text-align: center;
+    text-transform: uppercase;
+}
+.author{
+    text-align: center;
+    font-size: 10px;
 }
 .grid img{
     height: 250px;
@@ -35,7 +44,12 @@
     -webkit-box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.79);
 -moz-box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.79);
 box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.79);
+position: relative;  
+border: 1px solid #333;
+margin: 2%;
+overflow: hidden;
 }
+
 .btn{
     width: 90px;
     height: 40px;
@@ -44,8 +58,8 @@ box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.79);
     border-radius: 20px;
     position: absolute;
     bottom:10px;
-    right: 10px;
-    border:2px solid rgb(184, 60, 60);
+    right: 0px;
+    border:1px solid rgb(184, 60, 60);
     cursor: pointer; 
     
 
@@ -58,14 +72,16 @@ box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.79);
     border:none;
     border-radius: 0 20px 20px 0;
    
-    border:2px solid rgb(184, 60, 60);
+    border:1px solid rgb(184, 60, 60);
     cursor: pointer; 
     
 
 }
 input{
-    height: 24px;
-    border:2px solid rgb(184, 60, 60);
+    height: 26px;
+    border:1px solid rgb(184, 60, 60);
     border-right: 0px;
+    border-top: 0px;
+    border-left:0px;
     padding-left:15px;
 }
