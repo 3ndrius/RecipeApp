@@ -2,8 +2,8 @@ import React from 'react';
 
 import {Link} from "react-router-dom";
 const Recipes = (props) => (
-        
-          props.recipes.map((recipe) => {
+      
+  props.recipes.map((recipe) => {
            
             return(
               <div key={recipe.recipe_id} className="grid-item"> 
@@ -20,6 +20,8 @@ const Recipes = (props) => (
             );
             
         }) 
+
+      
         
 
 );

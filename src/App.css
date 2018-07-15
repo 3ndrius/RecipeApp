@@ -70,11 +70,11 @@ box-shadow: 0px 4px 23px -8px rgba(0,0,0,1);
     height: 250px;
     width: 300px;
     opacity:1;
-    
-position: relative;  
+ position: relative;  
 
-
-overflow: hidden;
+}
+.grid img:hover{
+    transform: scale(0.9);
 }
 
 .btn{
