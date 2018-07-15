@@ -7,7 +7,7 @@ const Recipes = (props) => (
            
             return(
               <div key={recipe.recipe_id} className="grid-item"> 
-                <img src={recipe.image_url} alt={recipe.title} />
+               <div className="figure-wrap">  <img src={recipe.image_url} alt={recipe.title} /> </div>
                 <h4 className="title"> {recipe.title} </h4>
                 <p className="author">Publisher: <span>{recipe.publisher}</span> </p>
                 <button className="btn">

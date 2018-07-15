@@ -32,16 +32,17 @@ border-bottom: 1px solid black;
 .grid{
     padding-top: 50px;
     display:grid;
-    grid-gap:30px;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 430px 430px 430px 430px;
+    grid-gap:25px;
+    grid-template-columns: 290px 290px 290px;
+    grid-template-rows: 420px 420px 420px 420px;
     justify-content: center;
+    grid-row-gap: 20px;
   
 }
 .grid-item{
    
     position: relative;
-    height: 440px;
+    height: 420px;
    opacity:0.92;
     border-radius: 2px;
     -webkit-box-shadow: 0px 4px 23px -8px rgba(0,0,0,1);
@@ -49,6 +50,7 @@ border-bottom: 1px solid black;
 box-shadow: 0px 4px 23px -8px rgba(0,0,0,1);
  background: white;
  transition: all .6s ease-in-out;
+
 }
 .grid-item:hover{
     opacity:1;
@@ -68,14 +70,26 @@ box-shadow: 0px 4px 23px -8px rgba(0,0,0,1);
 }
 .grid img{
     height: 250px;
-    width: 300px;
-    opacity:1;
+    width: 290px;
+    opacity:1;  
  position: relative;  
+ transition: all .5s ease-in-out;
 
 }
-.grid img:hover{
-    transform: scale(0.9);
+.figure-wrap{
+    height: 250px;
+    width: 290px;
+    opacity:1;  
+    transform: scale(0.96);
+ position: relative;  
+ transition: all .5s ease-in-out;
+ overflow:hidden;
 }
+.grid-item:hover img{
+    transform:scale(1.1) rotate(2deg);
+    
+}
+
 
 .btn{
     width: 100px;
@@ -88,8 +102,17 @@ box-shadow: 0px 4px 23px -8px rgba(0,0,0,1);
     right: 100px;
     border:1px solid rgb(184, 60, 60);
     cursor: pointer; 
+    transition: all 0.6s ease;
     
 
+}
+.btn:hover{
+    background:rgb(184, 60, 60);
+    border:1px solid rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+.btn:hover a{
+    color:rgb(255, 255, 255);
 }
 .btn a{
     color:rgb(5, 74, 102);
