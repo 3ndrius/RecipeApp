@@ -5,20 +5,12 @@ import './App.css';
 import Form from "./components/Form";
 import Recipes from './components/Recipes';
 
-
-
-
-
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
-
-
-
 class App extends Component {
 
   state = {
     recipes: []
   }
-
   getRecipe = async (e) => {
     const recipeName = e.target.elements.recipeName.value;
     e.preventDefault();
@@ -29,7 +21,6 @@ class App extends Component {
       recipes: data.recipes
     });
   }
- 
   componentDidMount = () => {
 
     const json = localStorage.getItem("recipes");
@@ -38,11 +29,9 @@ class App extends Component {
       recipes: recipes
     });
   }
-
   componentDidUpdate = () => {
     const recipes = JSON.stringify(this.state.recipes);
     localStorage.setItem("recipes", recipes);
-   
 }
   render() {
     
