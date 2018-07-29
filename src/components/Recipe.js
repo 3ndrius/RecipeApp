@@ -1,22 +1,14 @@
 import React, { Component } from 'react';
-
-
 import { Link } from 'react-router-dom';
 import Minirecipe from './Minirecipe';
-
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
-
-
 export default class Recipe extends Component {
 
     state = {
         activeRecipe: [],
         recipes: []
-       
     }
-
     componentDidMount = async () => {
-
 
         const title = this.props.location.state.recipe;
         const json = localStorage.getItem("recipes");
@@ -30,15 +22,10 @@ export default class Recipe extends Component {
         });
 
         console.log(this.state.recipes);
-       
     
     };
-
-
   render() {
-        const recipe = this.state.activeRecipe;
-       
-        
+        const recipe = this.state.activeRecipe;  
     return (
     <div>
       <div className="container-grid">
@@ -49,8 +36,7 @@ export default class Recipe extends Component {
           <div className="link"> <a>{recipe.source_url} </a> </div>
           <button className="btn3">
             <Link to="/"> Go back </Link>
-          </button>
-        
+          </button>  
       </div>
       <div className="header2" > See also ! </div>
       <div className="mini-grid">
