@@ -14,8 +14,6 @@ const Minirecipe= (props) => (
             );
             
         }) 
-        
-
 );
 
 export default Minirecipe;
