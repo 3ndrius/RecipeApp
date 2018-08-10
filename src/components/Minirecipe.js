@@ -13,9 +13,16 @@
 //               </div>
 //             );
             
+<<<<<<< HEAD
 //         }) 
         
 
 // );
 
 // export default Minirecipe;
+=======
+        }) 
+);
+
+export default Minirecipe;
+>>>>>>> 7290f6fb59bf943da91a009f46e6f084a2a45225

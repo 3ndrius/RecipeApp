@@ -9,10 +9,8 @@ const Router = () => (
         <Switch> 
             <Route path="/" component={App} exact />
             <Route path="/recipe/:id" component={Recipe} />
-            
         </Switch>
     </BrowserRouter>
-  
 );
 export default Router;
 

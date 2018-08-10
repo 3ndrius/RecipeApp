@@ -16,13 +16,8 @@ const Recipes = (props) => (
                     }}> View Recipe </Link>
                 </button>
               </div>
-            );
-            
-        }) 
-
-      
-        
-
+            );        
+        })
 );
 
 export default Recipes;
