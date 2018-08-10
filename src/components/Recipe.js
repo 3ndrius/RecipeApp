@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 import { Link } from 'react-router-dom';
-import Minirecipe from './Minirecipe';
+// import Minirecipe from './Minirecipe';
 
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
 
@@ -52,10 +52,10 @@ export default class Recipe extends Component {
           </button>
         
       </div>
-      <div className="header2" > See also ! </div>
+      {/* <div className="header2" > See also ! </div>
       <div className="mini-grid">
           <Minirecipe recipes = {this.state.recipes}/>
-          </div>
+          </div> */}
       </div>
     )
   }
