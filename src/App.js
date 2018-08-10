@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
 // own components
 import Form from "./components/Form";
 import Recipes from './components/Recipes';
 import Menu from './components/Menu';
 
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
-
 class App extends Component {
   state = {
     recipes: []
@@ -39,7 +37,6 @@ class App extends Component {
     return (
       <div className="app">
       <Menu/>
-      <div className="header"> RecipesBook </div>
         <Form getRecipe={this.getRecipe}/>
         <div className="grid">
         <Recipes recipes = {this.state.recipes}/>

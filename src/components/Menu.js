@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import logo from '../';
+
+
 const Menu = () => {
     return (
-      <div>
-          <div className="logo"> <img src="/public/logo.jpg" alt="logo"/></div>
+      <div className="navbar">
+          <div className="logo"> <img src="/logo.jpg" alt="logo"/>  <h2>Gratia</h2></div>
           <ul className="nav">
             <li className="item">About</li>
             <li className="item">Menu</li>
