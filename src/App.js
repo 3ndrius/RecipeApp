@@ -7,6 +7,7 @@ import Recipes from './components/Recipes';
 import Menu from './components/Menu';
 
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
 class App extends Component {
@@ -48,7 +49,7 @@ class App extends Component {
         </div>
 
       
-
+      <Footer/>
 
       </div>
     );

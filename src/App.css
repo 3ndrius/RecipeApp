@@ -235,6 +235,42 @@ ul {
     font-size:46px;
     color:#151B28;
 }
+.footer{
+    padding: 150px 0 10px 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color:rgba(139, 144, 157, 0.623)
+}
+.footer-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:1px solid rgba(0, 0, 0, 0.123);
+    position: relative;
+
+}
+.round{
+    height: 120px;
+    width:120px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgba(0, 0, 0, 0.137);
+    position: absolute;
+    top:-60px;
+}
+.footer-wrap h3{
+    padding-top: 70px;
+    color:#151B28;
+}
+
+
+
+
+
 @media(max-width:1024px) {
     .grid {
         padding-top: 50px;

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { Link } from 'react-router-dom';
 import Menu from './Menu';
+import Footer from './Footer';
+import Header from './Header';
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
 export default class Recipe extends Component {
 
@@ -26,20 +28,29 @@ export default class Recipe extends Component {
         const recipe = this.state.activeRecipe;   
     return (
     <div>
-      <div className="container-grid">
-        <Menu/>
-          <div className="figure"><img src={recipe.image_url} alt={recipe.title} /></div>
+        
+      <div className="container-grid"> 
+      <Menu/>
+        <Header/>
+
+
+
+
+
+        
+      {/* <div className="figure"><img src={recipe.image_url} alt={recipe.title} /></div>
           <div className="firure-caption"> <h2> {recipe.title} </h2> </div>
           <div className="author"> <h5>Publisher: {recipe.publisher} </h5> </div>
           <div className="link"> <a>{recipe.source_url} </a> </div>
           <button className="btn3">
             <Link to="/"> Go back </Link>
-          </button> 
+          </button>  */}
       </div>
       {/* <div className="header2" > See also ! </div>
       <div className="mini-grid">
           <Minirecipe recipes = {this.state.recipes}/>
           </div> */}
+          <Footer />
       </div>
     )
   }
