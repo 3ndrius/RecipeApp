@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-// import Minirecipe from './Minirecipe';
 
-=======
-import Minirecipe from './Minirecipe';
->>>>>>> 7290f6fb59bf943da91a009f46e6f084a2a45225
+import { Link } from 'react-router-dom';
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
 export default class Recipe extends Component {
 
     state = {
         activeRecipe: [],
-        recipes: []
+        recipes: []  
     }
     componentDidMount = async () => {
-
         const title = this.props.location.state.recipe;
         const json = localStorage.getItem("recipes");
          const recipes = JSON.parse(json);
@@ -25,12 +19,10 @@ export default class Recipe extends Component {
         activeRecipe: res.recipes[0],
         recipes:recipes
         });
-
         console.log(this.state.recipes);
-    
     };
   render() {
-        const recipe = this.state.activeRecipe;  
+        const recipe = this.state.activeRecipe;   
     return (
     <div>
       <div className="container-grid">
@@ -41,7 +33,7 @@ export default class Recipe extends Component {
           <div className="link"> <a>{recipe.source_url} </a> </div>
           <button className="btn3">
             <Link to="/"> Go back </Link>
-          </button>  
+          </button> 
       </div>
       {/* <div className="header2" > See also ! </div>
       <div className="mini-grid">

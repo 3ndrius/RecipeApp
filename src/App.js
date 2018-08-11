@@ -4,10 +4,7 @@ import './App.css';
 // own components
 import Form from "./components/Form";
 import Recipes from './components/Recipes';
-<<<<<<< HEAD
 import Menu from './components/Menu';
-=======
->>>>>>> 7290f6fb59bf943da91a009f46e6f084a2a45225
 
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
 class App extends Component {
@@ -34,11 +31,7 @@ class App extends Component {
   }
   componentDidUpdate = () => {
     const recipes = JSON.stringify(this.state.recipes);
-<<<<<<< HEAD
     localStorage.setItem("recipes", recipes); 
-=======
-    localStorage.setItem("recipes", recipes);
->>>>>>> 7290f6fb59bf943da91a009f46e6f084a2a45225
 }
   render() {
     return (
