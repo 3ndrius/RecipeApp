@@ -12,7 +12,8 @@ import Footer from './components/Footer';
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
 class App extends Component {
   state = {
-    recipes: []
+    recipes: [],
+    header:"MENU"
   }
   getRecipe = async (e) => {
     const recipeName = e.target.elements.recipeName.value;
@@ -22,6 +23,7 @@ class App extends Component {
     const data = await api_call.json();
     this.setState({
       recipes: data.recipes
+     
     });
   }
   componentDidMount = () => {
@@ -40,7 +42,7 @@ class App extends Component {
     return (
       <div className="app">
       <Menu/>
-      <Header/>
+      <Header header={this.state.header}/>
         <Form getRecipe={this.getRecipe}/>
        
         <div className="grid">

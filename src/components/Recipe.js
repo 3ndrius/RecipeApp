@@ -27,25 +27,40 @@ export default class Recipe extends Component {
   render() {
         const recipe = this.state.activeRecipe;   
     return (
-    <div>
-        
-      <div className="container-grid"> 
+    <div className="recipe-container">
       <Menu/>
-        <Header/>
+        <Header header="MEAL"/>
+        <div className="card">
+            <div className="figure"> 
+            <img src={recipe.image_url} alt={recipe.title} />
+            </div>
+            <div className="figure-caption"> 
+             <div className="head"> 
+             <h2> {recipe.title} </h2> 
+             <a>{recipe.source_url} </a>
+             </div>
+             <h5>Publisher: {recipe.publisher} </h5>
+             <button className="btn3">
+            <Link to="/"> Go back </Link>
+          </button> 
+             
+
+            </div>
+
+         </div>
 
 
 
 
 
-        
       {/* <div className="figure"><img src={recipe.image_url} alt={recipe.title} /></div>
           <div className="firure-caption"> <h2> {recipe.title} </h2> </div>
-          <div className="author"> <h5>Publisher: {recipe.publisher} </h5> </div>
+          <div className="author">  </div>
           <div className="link"> <a>{recipe.source_url} </a> </div>
           <button className="btn3">
             <Link to="/"> Go back </Link>
           </button>  */}
-      </div>
+     
       {/* <div className="header2" > See also ! </div>
       <div className="mini-grid">
           <Minirecipe recipes = {this.state.recipes}/>
