@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { Link } from 'react-router-dom';
+import Menu from './Menu';
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
 export default class Recipe extends Component {
 
@@ -26,7 +27,7 @@ export default class Recipe extends Component {
     return (
     <div>
       <div className="container-grid">
-      <div className="header"> RecipesBook </div>
+        <Menu/>
           <div className="figure"><img src={recipe.image_url} alt={recipe.title} /></div>
           <div className="firure-caption"> <h2> {recipe.title} </h2> </div>
           <div className="author"> <h5>Publisher: {recipe.publisher} </h5> </div>

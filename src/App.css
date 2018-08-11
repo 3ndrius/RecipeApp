@@ -1,38 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+:root{
+    color:#8B909D;
+}
+
 .app {
     height: 100%;
     display: flex;
     align-items: center;
     max-width: 1920px;
     margin: 0 auto;
-    background-image: linear-gradient(to right bottom, #ffffff, #fcfcfc, #f8f8f8, #f5f5f5, #f2f2f2);
+   
     background-size: cover;
     background-position: center;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    box-sizing: border-box;
+    padding: 0 0 50px 0;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(209,217,235,1) 0%, rgba(224,229,241,1) 25%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(209,217,235,1)), color-stop(25%, rgba(224,229,241,1)), color-stop(76%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
+background:-webkit-radial-gradient(center, ellipse cover, rgba(209,217,235,1) 0%, rgba(224,229,241,1) 25%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(209,217,235,1) 0%, rgba(224,229,241,1) 25%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%); /* opera 11.10+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(209,217,235,1) 0%, rgba(224,229,241,1) 25%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%); /* ie10+ */
+background:radial-gradient(ellipse at center, rgba(209,217,235,1) 0%, rgba(224,229,241,1) 25%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D1D9EB', endColorstr='#FFFFFF',GradientType=1 ); /* ie6-9 */
 }
 
 .grid {
-    padding-top: 50px;
+    margin-top:50px;
     display: grid;
-    grid-gap: 35px;
+    grid-gap: 25px;
     grid-template-columns: minmax(200px, 290px) minmax(200px, 290px) minmax(200px, 290px);
-    grid-template-rows: minmax(420px, 420px) minmax(420px, 420px) minmax(420px, 420px);
+    grid-template-rows: minmax(420px, 420px) minmax(420px, 420px);
     justify-content: center;
-    grid-row-gap: 15px;
+    grid-row-gap: 25px;
+    background: transparent;
+    
 }
 
 .grid-item {
     position: relative;
-    height: 420px;
+    height: 410px;
     opacity: 0.92;
     -webkit-box-shadow: 0px 4px 23px -8px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 4px 23px -8px rgba(0, 0, 0, 1);
     box-shadow: 0px 4px 23px -8px rgba(0, 0, 0, 1);
-    background: white;
+    background: rgba(255, 255, 255, 0.856);
     transition: all .6s ease-in-out;
     border-radius: 10px 10px 2px 2px;
+    
 }
 
 .grid-item:hover {
@@ -154,26 +171,28 @@ input {
 }
 
 .wrap-nav {
-    max-width:100%;
-    padding:0 5%;
+    max-width: 100%;
+    padding: 0 5%;
     box-sizing: border-box;
 }
 
 .navbar {
-  display:grid;
-  width: 100%;  
-  grid-template-columns: minmax(80px, 450px) minmax(100px, 450px);
-  grid-template-rows: 1fr;
-  font-size:0.8em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(80px, 450px) minmax(100px, 450px);
+    grid-template-rows: 70px;
+    font-size: 14px;
+    color:#151B28;
 }
 
 .nav {
-   display:flex;
-   justify-content: flex-end;
-   align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
    
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
 }
@@ -182,11 +201,13 @@ ul{
 .item {
     margin: 5px 5px;
     list-style-type: none;
+    font-size:12px;
+    font-weight: 400;
+    color:rgba(21, 27, 40, 0.747);
 }
 
 .logo {
-    display:flex;
-    
+    display: flex;
     align-items: center;
     
 }
@@ -195,13 +216,32 @@ ul{
     padding-left: 7px;
 }
 
+#header {
+    background: url('/Gratia.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 50px 0;
+    height: 200px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size:12px;
+    flex-direction: column;
+    color:var(--color);
+}
+#header h1{
+    font-size:46px;
+    color:#151B28;
+}
 @media(max-width:1024px) {
     .grid {
         padding-top: 50px;
         display: grid;
         grid-gap: 25px;
         grid-template-columns: minmax(200px, 290px) minmax(200px, 290px);
-        grid-template-rows: 420px 420px 420px 420px;
+        grid-template-rows: 420px 420px 420px;
         justify-content: center;
         grid-row-gap: 20px;
         padding-bottom: 50px;
@@ -215,8 +255,14 @@ ul{
         padding-bottom: 50px;
         grid-gap: 15px;
         grid-template-columns: minmax(200px, 290px);
-        grid-template-rows: minmax(340px 420px) minmax(340px 420px) minmax(340px 420px) minmax(340px 420px) minmax(340px 420px) minmax(340px 420px) minmax(340px 420px) minmax(340px 420px);
+        grid-template-rows: minmax(340px 420px) minmax(340px 420px) minmax(340px 420px) minmax(340px 420px) minmax(340px 420px);
         justify-content: center;
         grid-row-gap: 10px;
+    }
+    #header {
+        height: 140px;
+        width: 300px;
+        font-size:0.8em;
+        margin: 50px 0 70px 0;
     }
 }
