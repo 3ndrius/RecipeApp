@@ -9,8 +9,13 @@ export default class Recipe extends Component {
 
     state = {
         activeRecipe: [],
-        recipes: []  
+        recipes: [],
+        loading:true,
+        napis: "Loading..."
     }
+
+
+
     componentDidMount = async () => {
         const title = this.props.location.state.recipe;
         const json = localStorage.getItem("recipes");
@@ -20,53 +25,42 @@ export default class Recipe extends Component {
         const res = await req.json();
         this.setState({
         activeRecipe: res.recipes[0],
-        recipes:recipes
+        recipes:recipes,
+        loading:false
         });
-        console.log(this.state.recipes);
+        
     };
   render() {
         const recipe = this.state.activeRecipe;   
+   
     return (
-    <div className="recipe-container">
-      <Menu/>
-        <Header header="MEAL"/>
-        <div className="card">
-            <div className="figure"> 
-            <img src={recipe.image_url} alt={recipe.title} />
-            </div>
-            <div className="figure-caption"> 
-             <div className="head"> 
-             <h2> {recipe.title} </h2> 
-             <a>{recipe.source_url} </a>
-             </div>
-             <h5>Publisher: {recipe.publisher} </h5>
-             <button className="btn3">
-            <Link to="/"> Go back </Link>
-          </button> 
-             
-
-            </div>
+   this.state.loading ? <div className="loading"> {this.state.napis} </div> : 
+   <div className="recipe-container">
+   <Menu/>
+     <Header header="MEAL" tips="Enjoy your favourite meal."/>
+     <div className="card">
+         <div className="figure"> 
+         <img src={recipe.image_url} alt={recipe.title} />
+         </div>
+         <div className="figure-caption"> 
+          <div className="head"> 
+          <h2> {recipe.title} </h2> 
+          <a>{recipe.source_url} </a>
+          </div>
+          <h5>Publisher: {recipe.publisher} </h5>
+          <button className="btn3">
+         <Link to="/"> Go back </Link>
+       </button> 
+          
 
          </div>
 
-
-
-
-
-      {/* <div className="figure"><img src={recipe.image_url} alt={recipe.title} /></div>
-          <div className="firure-caption"> <h2> {recipe.title} </h2> </div>
-          <div className="author">  </div>
-          <div className="link"> <a>{recipe.source_url} </a> </div>
-          <button className="btn3">
-            <Link to="/"> Go back </Link>
-          </button>  */}
-     
-      {/* <div className="header2" > See also ! </div>
-      <div className="mini-grid">
-          <Minirecipe recipes = {this.state.recipes}/>
-          </div> */}
-          <Footer />
       </div>
+
+
+       <Footer />
+   </div>
+
     )
   }
 };

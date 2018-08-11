@@ -42,7 +42,7 @@ class App extends Component {
     return (
       <div className="app">
       <Menu/>
-      <Header header={this.state.header}/>
+      <Header header={this.state.header} tips="Type in search box your favourite food and click search."/>
         <Form getRecipe={this.getRecipe}/>
        
         <div className="grid">

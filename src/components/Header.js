@@ -6,7 +6,7 @@ import React from 'react'
       <div id="header">
      
     <h1> {props.header} </h1>
-    <p>Type in search box your favourite food and click search. </p>
+    <p>{props.tips} </p>
 
       </div>
     )
