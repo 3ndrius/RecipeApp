@@ -18,7 +18,7 @@ export default class Recipe extends Component {
         const json = localStorage.getItem("recipes");
          const recipes = JSON.parse(json);
         const req = await fetch(`https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=${API_KEY}&q=${title}`);
-        // const req = await fetch(`http://food2fork.com/api/search?key=${API_KEY}&q=${title}`);
+        // const req = await fetch(`https://food2fork.com/api/search?key=${API_KEY}&q=${title}`);
         const res = await req.json();
         this.setState({
         activeRecipe: res.recipes[0],

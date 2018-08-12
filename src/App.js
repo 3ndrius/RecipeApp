@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-
 // own components
 import Form from "./components/Form";
 import Recipes from './components/Recipes';
 import Menu from './components/Menu';
-
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -19,12 +17,11 @@ class App extends Component {
     const recipeName = e.target.elements.recipeName.value;
     e.preventDefault();
     const api_call = await fetch(`https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=${API_KEY}&q=${recipeName}&count=6`);
-    // const api_call = await fetch(`http://food2fork.com/api/search?key=${API_KEY}&q=${recipeName}&count=6`);
+    //  const api_call = await fetch(`https://food2fork.com/api/search?key=${API_KEY}&q=${recipeName}&count=6`);
 
     const data = await api_call.json();
     this.setState({
       recipes: data.recipes
-     
     });
   }
   componentDidMount = () => {
@@ -38,8 +35,7 @@ class App extends Component {
   componentDidUpdate = () => {
     const recipes = JSON.stringify(this.state.recipes);
     localStorage.setItem("recipes", recipes); 
-}
-  render() {
+}  render() {
     return (
       <div className="app">
       <Menu/>
