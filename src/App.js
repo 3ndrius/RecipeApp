@@ -35,7 +35,9 @@ class App extends Component {
   componentDidUpdate = () => {
     const recipes = JSON.stringify(this.state.recipes);
     localStorage.setItem("recipes", recipes); 
-}  render() {
+} 
+ render() {
+
     return (
       <div className="app">
       <Menu/>
