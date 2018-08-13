@@ -5,6 +5,7 @@ import App from "../App";
 import Recipe from "./Recipe";
 import About from './About';
 import Contact from './Contact';
+import Daily from './Daily';
 
 const Router = () => (
     <BrowserRouter>
@@ -13,6 +14,7 @@ const Router = () => (
             <Route path="/recipe/:id" component={Recipe} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/daily-menu" component={Daily} />
         </Switch>
     </BrowserRouter>
 );

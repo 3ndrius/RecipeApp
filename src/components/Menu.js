@@ -12,7 +12,7 @@ const Menu = () => {
           <div className="logo"> <img src="/logo.jpg" alt="logo"/>  <h2>Gratia</h2></div>
           <ul className="nav">
              <Link to="/about"><li className="item">About</li></Link> 
-            <li className="item">Menu</li>
+            <Link to="/daily-menu"><li className="item">DailyMenu</li></Link>
             <Link to="/contact"> <li className="item">Contact</li></Link>
            
           </ul>
