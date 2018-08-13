@@ -11,7 +11,7 @@ const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
 class App extends Component {
   state = {
     recipes: [],
-    header:"MENU"
+    header:"SEARCH"
   }
   getRecipe = async (e) => {
     const recipeName = e.target.elements.recipeName.value;

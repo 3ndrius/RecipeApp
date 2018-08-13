@@ -1,12 +1,15 @@
 import React from 'react'
-
-
+import Menu from './Menu';
+import Footer from './Footer';
+import Header from './Header';
 const Daily = () => {
   
     return (
-      <div>
-        
-        Daily
+        <div className="app">
+        <Menu/>
+        <Header header="DailyMenu"/>
+        About page
+        <Footer/>
       </div>
     )
   

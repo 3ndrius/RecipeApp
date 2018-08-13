@@ -9,7 +9,7 @@ const Menu = () => {
      
     <div className="wrap-nav" > 
   <div className="navbar">
-          <div className="logo"> <img src="/logo.jpg" alt="logo"/>  <h2>Gratia</h2></div>
+          <Link to="/"> <div className="logo"> <img src="/logo.jpg" alt="logo"/>  <h2>Gratia</h2></div> </Link>
           <ul className="nav">
              <Link to="/about"><li className="item">About</li></Link> 
             <Link to="/daily-menu"><li className="item">DailyMenu</li></Link>
