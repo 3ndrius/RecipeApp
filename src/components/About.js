@@ -9,7 +9,9 @@ const About = () => {
       <div className="app">
         <Menu/>
         <Header header="ABOUT"/>
-        About page
+          <p> This is a page using ReactJS</p>
+          <p> Using fetch to take a data from api </p>
+          <p> Prototype layout form ..</p>
         <Footer/>
       </div>
     )

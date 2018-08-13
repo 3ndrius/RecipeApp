@@ -8,7 +8,8 @@ const Daily = () => {
         <div className="app">
         <Menu/>
         <Header header="DailyMenu"/>
-        About page
+        <h5> On this page will see a full daily menu (breakfast dinner supper etc..)</h5>
+        <p> Page will be update soon! </p>
         <Footer/>
       </div>
     )
