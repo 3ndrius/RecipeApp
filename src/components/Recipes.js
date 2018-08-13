@@ -12,12 +12,12 @@ export default class Recipes extends Component {
                       <div className="figure-wrap">  <img src={recipe.image_url} alt={recipe.title} /> </div>
                        <h4 className="title"> {recipe.title.length > 25 ? recipe.title.slice(0, 25) : recipe.title }  </h4>
                        <p className="author">Publisher: <span>{recipe.publisher}</span> </p>
-                       <button className="btn">
+                       
                         <Link to={{
                            pathname: `/recipe/${recipe.recipe_id}`,
                           state: {recipe: recipe.title}
-                         }}> View Recipe </Link>
-                      </button>
+                         }}><button className="btn"> View Recipe  </button></Link>
+                      
             </div>
     )
    })

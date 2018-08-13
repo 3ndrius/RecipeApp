@@ -45,9 +45,9 @@ export default class Recipe extends Component {
           <a>{recipe.source_url} </a>
           </div>
           <h5>Publisher: {recipe.publisher} </h5>
-          <button className="btn3">
-         <Link to="/"> Go back </Link>
-       </button> 
+          
+         <Link to="/"><button className="btn3"> Go back </button>  </Link>
+      
           
 
          </div>
