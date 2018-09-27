@@ -3,7 +3,6 @@ import Menu from './Menu';
 import Footer from './Footer';
 import Header from './Header';
 const Contact = () => {
-  
     return (
         <div className="app">
         <Menu/>
@@ -12,10 +11,8 @@ const Contact = () => {
         <p> Project api: http://food2fork.com/api/ </p>
         <a href="https://github.com/3ndrius/RecipeApp"> All code you can find on my GitHub</a>
         <p> Enjoy !! </p>
-        
         <Footer/>
       </div>
     )
-  
 }
 export default Contact;
