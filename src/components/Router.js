@@ -1,12 +1,10 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route}  from "react-router-dom";
-
 import App from "../App";
 import Recipe from "./Recipe";
 import About from './About';
 import Contact from './Contact';
 import Daily from './Daily';
-
 const Router = () => (
     <BrowserRouter>
         <Switch> 
