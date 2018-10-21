@@ -4,7 +4,6 @@ import Footer from './Footer';
 import Header from './Header';
 
 const About = () => {
-  
     return (
       <div className="app">
         <Menu/>
@@ -15,6 +14,5 @@ const About = () => {
         <Footer/>
       </div>
     )
-  
 }
 export default About;
