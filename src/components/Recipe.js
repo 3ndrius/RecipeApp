@@ -6,7 +6,6 @@ import Footer from './Footer';
 import Header from './Header';
 const API_KEY = "53c2c4dd92ce54fe6bf9b7acbf8248c5";
 export default class Recipe extends Component {
-
     state = {
         activeRecipe: [],
         recipes: [],
@@ -24,8 +23,7 @@ export default class Recipe extends Component {
         activeRecipe: res.recipes[0],
         recipes:recipes,
         loading:false
-        });
-        
+        });        
     };
   render() {
         const recipe = this.state.activeRecipe;   
@@ -44,20 +42,12 @@ export default class Recipe extends Component {
           <h2> {recipe.title} </h2> 
           <a>{recipe.source_url} </a>
           </div>
-          <h5>Publisher: {recipe.publisher} </h5>
-          
+          <h5>Publisher: {recipe.publisher} </h5>     
          <Link to="/"><button className="btn3"> Go back </button>  </Link>
-      
-          
-
          </div>
-
       </div>
-
-
        <Footer />
    </div>
-
     )
   }
 };
