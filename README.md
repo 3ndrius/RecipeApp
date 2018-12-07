@@ -1,3 +1,20 @@
+
+# Recipe APP Idea
+![RecipeApp](https://github.com/3ndrius/book_app/blob/master/public/ipad-pro-mockup-scene.jpeg?raw=true)
+- ReactJS/ReactRouter
+- HTML & CSS
+- AdobeXD & VS Code
+- (RWD - mobile, tablet, desktop) / css-grid, Flex  
+- Read API
+
+# [DEMO](https://gratia.netlify.com/)
+
+![SinglePage](https://github.com/3ndrius/book_app/blob/master/public/ipad-pro-mockup-scene%20(2).jpeg?raw=true)
+
+
+<hr/>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Project Using ReactJS, food api from http://food2fork.com/api/ 
